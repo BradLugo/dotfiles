@@ -1,0 +1,24 @@
+[user]
+	name = USERNAME
+    email = EMAIL
+[color]
+    ui = true
+[core]
+    autocrlf = input
+    editor = vim
+    excludesfile = ~/.gitignore_global
+[diff]
+	tool = bc3
+[merge]
+	tool = bc3
+[mergetool]
+	bcomp = trustExitCode
+	bc3 = trustExitCode
+[commit]
+    gpgsign = true
+    template = ~/.gitmessage
+[gpg]
+    program = gpg
+[core]
+    commentChar = auto
+    excludesfile = /Users/brad/.gitignore_global

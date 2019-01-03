@@ -1,0 +1,2 @@
+URxvt.font:	xft:Terminus:pixelsize=20:antialias=false
+URxvt.boldFont:	xft:Terminus:bold:pixelsize=20:antialias=false
