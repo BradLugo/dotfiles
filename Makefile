@@ -44,6 +44,7 @@ zsh:
 	@$(call print-bold-header, "Stowing zsh...")
 ifeq ($(UNAME_S), Darwin)
 		brew install getantibody/tap/antibody
+		antibody bundle < zsh/.config/zsh/zsh_plugins.txt > zsh/.config/zsh/zsh_plugins.zsh 
 endif
 	stow -R zsh
 
