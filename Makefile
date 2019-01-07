@@ -36,11 +36,17 @@ define print-help-text
 	echo
 endef
 
-all: zsh vim configs
+all: zsh profile vim configs
+
+mac: zsh profile vim
 
 zsh:
 	@$(call print-bold-header, "Stowing zsh...")
 	stow -R zsh
+
+profile:
+	@$(call print-bold-header, "Stowing profile...")
+	stow -R profile
 
 git:
 	@$(call print-bold-header, "Stowing version control stuff...")
