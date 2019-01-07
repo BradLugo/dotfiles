@@ -43,7 +43,7 @@ mac: zsh profile vim
 zsh:
 	@$(call print-bold-header, "Stowing zsh...")
 ifeq ($(UNAME_S), Darwin)
-		brew install antibody
+		brew install getantibody/tap/antibody
 endif
 	stow -R zsh
 
