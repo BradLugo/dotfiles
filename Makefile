@@ -42,10 +42,9 @@ mac: zsh profile vim
 
 zsh:
 	@$(call print-bold-header, "Stowing zsh...")
-	UNAME := $(shell uname)
-	ifeq ($(UNAME_S),Darwin)
+ifeq ($(UNAME_S), Darwin)
 		brew install antibody
-	endif
+endif
 	stow -R zsh
 
 profile:
