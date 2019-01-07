@@ -22,6 +22,9 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # Add $HOME/bin
 export PATH=$HOME/bin:$PATH
 
+# Add local Python to path
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
