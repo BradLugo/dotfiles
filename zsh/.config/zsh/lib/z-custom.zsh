@@ -46,7 +46,7 @@ bindkey -M isearch " " magic-space # normal space during searches
 #
 # change ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE in case the color contrast is bad
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/src/config.zsh
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 
 
 #-----------------------------------------------------
@@ -67,4 +67,7 @@ test -d ${ZDOTDIR:-$HOME}/.fzf && source ${ZDOTDIR:-$HOME}/.fzf.zsh
 #-----------------------------------------------------
 # https://github.com/nvbn/thefuck
 # brew install thefuck
-# eval $(thefuck --alias)
+if type "$foobar_command_name" > /dev/null; then
+    eval $(thefuck --alias)
+    eval $(thefuck --alias fk)
+fi
