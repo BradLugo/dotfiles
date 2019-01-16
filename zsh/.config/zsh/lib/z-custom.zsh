@@ -67,7 +67,7 @@ test -d ${ZDOTDIR:-$HOME}/.fzf && source ${ZDOTDIR:-$HOME}/.fzf.zsh
 #-----------------------------------------------------
 # https://github.com/nvbn/thefuck
 # brew install thefuck
-if type "$foobar_command_name" > /dev/null; then
+if type "thefuck" > /dev/null 2>&1; then
     eval $(thefuck --alias)
     eval $(thefuck --alias fk)
 fi
