@@ -46,8 +46,7 @@ bindkey -M isearch " " magic-space # normal space during searches
 #
 # change ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE in case the color contrast is bad
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/src/config.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
-
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 
 #-----------------------------------------------------
 # https://github.com/zsh-users/zsh-completions
