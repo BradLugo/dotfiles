@@ -10,7 +10,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/Users/brad/.cargo/bin/bin:$PATH"
 
 # Add environment variable for Go
-export GOPATH=$HOME/Development/Go
+export GOPATH=$HOME/Development/go
 export PATH=$PATH:$GOPATH/bin
 
 # Add environment variable for ASP.NET Core development
