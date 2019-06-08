@@ -7,14 +7,13 @@ export PATH=$PATH:$USER_BASE_PATH/bin
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-export PATH="/Users/brad/.cargo/bin/bin:$PATH"
-
 # Add environment variable for Go
 export GOPATH=$HOME/Development/go
 export PATH=$PATH:$GOPATH/bin
 
 # Add environment variable for ASP.NET Core development
-export ASPNETCORE_ENVIRONMENT=development
+export ASPNETCORE_ENVIRONMENT=Development
+export PATH=$PATH:/usr/local/share
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
