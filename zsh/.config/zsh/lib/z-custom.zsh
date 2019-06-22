@@ -40,7 +40,6 @@ bindkey " " globalias
 bindkey "^ " magic-space           # control-space to bypass completion
 bindkey -M isearch " " magic-space # normal space during searches
 
-
 #-----------------------------------------------------
 # https://github.com/zsh-users/zsh-autosuggestions
 #
@@ -56,7 +55,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 # Performance
 # https://gist.github.com/ctechols/ca1035271ad134841284
 if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
 #-----------------------------------------------------
