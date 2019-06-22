@@ -55,6 +55,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 #autoload -U compinit && compinit
 # Performance
 # https://gist.github.com/ctechols/ca1035271ad134841284
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
 
 #-----------------------------------------------------
 # https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh
