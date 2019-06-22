@@ -62,8 +62,7 @@ fi
 # https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh
 #
 # brew install fzf
-#
-test -d ${ZDOTDIR:-$HOME}/.fzf && source ${ZDOTDIR:-$HOME}/.fzf.zsh
+[ -f ${ZDOTDIR:-$HOME}/.fzf.zsh ] && source ${ZDOTDIR:-$HOME}/.fzf.zsh
 
 #-----------------------------------------------------
 # https://github.com/nvbn/thefuck
