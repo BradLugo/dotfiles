@@ -1,1 +1,5 @@
 zsh_plugins.zsh
+zsh_plugins.sh
+**/.DS_Store
+*.zwc
+*.old
