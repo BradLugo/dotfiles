@@ -29,3 +29,5 @@ if [ $(date +'%j') != $(/usr/bin/stat -f '%Sm' -t '%j' ${ZDOTDIR:-$HOME}/.zcompd
 else
     compinit -C;
 fi
+
+autoload -U +X bashcompinit && bashcompinit
