@@ -65,9 +65,3 @@ fi
 [ -f ${ZDOTDIR:-$HOME}/.fzf.zsh ] && source ${ZDOTDIR:-$HOME}/.fzf.zsh
 
 #-----------------------------------------------------
-# https://github.com/nvbn/thefuck
-# brew install thefuck
-if type thefuck &>/dev/null; then
-    eval $(thefuck --alias)
-    eval $(thefuck --alias fk)
-fi

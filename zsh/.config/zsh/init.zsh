@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+	#!/usr/bin/env zsh
 # vim:syntax=zsh
 # vim:filetype=zsh
 
@@ -13,6 +13,15 @@ export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 [ ! -n "$ZSH_VERSION" ] && return
 
 #-----------------------------------------------------
+# Load the plugins before scripts
+#
+#source ${ZSHCONFIG}/antibody.zsh
+#source /usr/local/opt/zinit/zinit.zsh
+#source ~/.zinit/bin/zinit.zsh
+
+#source ${ZSHCONFIG}/zsh_plugins.zsh
+source "$HOME/.config/zsh/zinit_plugins.zsh"
+
 # Setting autoloaded functions
 #
 my_zsh_fpath=${ZSHCONFIG}/functions
@@ -27,12 +36,6 @@ fi
 unset my_zsh_fpath
 
 #-----------------------------------------------------
-# Load the plugins before scripts
-#
-source ${ZSHCONFIG}/antibody.zsh
-
-source ${ZSHCONFIG}/zsh_plugins.zsh
-
 #
 # Load all scripts ${ZSHCONFIG}/lib/*.zsh
 #
@@ -44,3 +47,4 @@ if [[ -d "$my_zsh_lib" ]]; then
 fi
 unset my_zsh_lib
 
+eval "$(starship init zsh)"

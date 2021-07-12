@@ -2,7 +2,9 @@
 # vim:syntax=zsh
 # vim:filetype=zsh
 
+#
 # Executes commands at login before zshrc.
+#
 if [[ -z "$LANG" ]]; then
     export LANG='en_US.UTF-8'
     export LANGUAGE=en_US.UTF-8
@@ -21,8 +23,8 @@ export LESSCHARSET=utf-8
 typeset -gU cdpath fpath path
 
 # Zsh search path for executable
-path=(
-  /usr/local/{bin,sbin}
-  $path
-)
+#path=(
+#  /usr/local/{bin,sbin}
+#  $path
+#)
 
