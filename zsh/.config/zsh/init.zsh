@@ -20,7 +20,10 @@ export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 #source ~/.zinit/bin/zinit.zsh
 
 #source ${ZSHCONFIG}/zsh_plugins.zsh
-source "$HOME/.config/zsh/zinit_plugins.zsh"
+
+source ${ZSHCONFIG}/antibody.zsh
+
+source ${ZSHCONFIG}/zsh_plugins.zsh
 
 # Setting autoloaded functions
 #
