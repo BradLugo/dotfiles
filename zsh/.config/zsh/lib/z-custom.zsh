@@ -57,11 +57,3 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
-
-#-----------------------------------------------------
-# https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh
-#
-# brew install fzf
-[ -f ${ZDOTDIR:-$HOME}/.fzf.zsh ] && source ${ZDOTDIR:-$HOME}/.fzf.zsh
-
-#-----------------------------------------------------

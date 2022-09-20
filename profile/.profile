@@ -1,5 +1,10 @@
 export PATH=/usr/local/opt/texinfo/bin:$PATH
 export PATH=/usr/local/opt/llvm/bin:$PATH
+export GPG_TTY=$(tty)
+export ATUIN_NOBIND="true"
+
+# Add Krew to PATH
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH=$PATH:$HOME/.rbenv/bin
@@ -29,22 +34,24 @@ export PATH=$PATH:/usr/local/share
 # Add $HOME/bin
 export PATH=$HOME/bin:$PATH
 
+export PATH=$PATH:/Library/TeX/texbin
+
 #export PYENV_ROOT="$HOME/.pyenv"
 #export PATH="$PYENV_ROOT/bin:$PATH"
 #if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)"; fi
 
 # Add local Python to path
-export PATH=$PATH:/usr/local/anaconda3/bin
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
+# export PATH=$PATH:/usr/local/anaconda3/bin
+# export PYENV_ROOT=$HOME/.pyenv
+# export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # nvm
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -d '/Library/Frameworks/Mono.framework/Versions/Current/bin/' ] && export PATH=$PATH:/Library/Frameworks/Mono.framework/Versions/Current/bin
 [ -f '/Applications/VMware Fusion.app/Contents/Library/vmrun' ] && export PATH="$PATH:/Applications/VMware Fusion.app/Contents/Library/vmrun"

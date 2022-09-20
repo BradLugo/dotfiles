@@ -18,9 +18,9 @@ export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 #source ${ZSHCONFIG}/antibody.zsh
 #source /usr/local/opt/zinit/zinit.zsh
 #source ~/.zinit/bin/zinit.zsh
-
-#source ${ZSHCONFIG}/zsh_plugins.zsh
-source "$HOME/.config/zsh/zinit_plugins.zsh"
+source /usr/local/opt/antidote/share/antidote/antidote.zsh
+source ${ZSHCONFIG}/antidote.zsh
+source ${ZSHCONFIG}/zsh_plugins.zsh
 
 # Setting autoloaded functions
 #
@@ -36,7 +36,6 @@ fi
 unset my_zsh_fpath
 
 #-----------------------------------------------------
-#
 # Load all scripts ${ZSHCONFIG}/lib/*.zsh
 #
 my_zsh_lib=${ZSHCONFIG}/lib
@@ -46,5 +45,3 @@ if [[ -d "$my_zsh_lib" ]]; then
    done
 fi
 unset my_zsh_lib
-
-eval "$(starship init zsh)"
